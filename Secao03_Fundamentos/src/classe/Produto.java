@@ -6,7 +6,23 @@ public class Produto {
 	double preco;
 	double desconto;
 	
-	double precoComDesconto () {
+	// Construtor padrão explícito
+	Produto() {
+			
+	}
+	
+	Produto(String nomeInicial) {
+		nome = nomeInicial;
+	}
+	
+	Produto(String nomeInicial, double precoInicial, double descontoInicial) {
+		nome = nomeInicial;
+		preco = precoInicial;
+		desconto = descontoInicial;
+	}
+	
+	// Métodos
+	double precoComDesconto() {
 		return preco * (1 - desconto);
 	}
 
