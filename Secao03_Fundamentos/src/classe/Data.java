@@ -6,4 +6,7 @@ public class Data {
 	int mes;
 	int ano;
 	
+	String dataFormatada() {
+		return String.format("%d/%d/%d", dia, mes, ano);
+	}
 }

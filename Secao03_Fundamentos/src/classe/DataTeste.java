@@ -9,6 +9,6 @@ public class DataTeste {
 		d1.mes = 7;
 		d1.ano = 2023;
 		
-		System.out.printf("%d/%d/%d", d1.dia, d1.mes, d1.ano);
+		System.out.printf(d1.dataFormatada());
 	}
 }
