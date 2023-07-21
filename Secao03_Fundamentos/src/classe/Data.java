@@ -13,6 +13,17 @@ public class Data {
 //		mes = 1;
 //		ano = 1970;
 		this(1, 1, 1970);
+		
+		int a;
+		a = 0;
+		System.out.println(a);// Uma variável local não é inicializada por padrão
+		
+		// VALORES PADRÕES
+		// byte, int short, int, long -> 0
+		// float, double -> 0.0
+		// boolean -> false
+		// char -> '\u0000'
+		// Objetos -> null
 	}
 	
 	Data(int dia, int mes, int ano) {
