@@ -4,7 +4,7 @@ public class Produto {
 	
 	String nome;
 	double preco;
-	double desconto;
+	static double desconto = 0.25;
 	
 	// Construtor padrão explícito
 	Produto() {
@@ -15,10 +15,9 @@ public class Produto {
 		nome = nomeInicial;
 	}
 	
-	Produto(String nomeInicial, double precoInicial, double descontoInicial) {
+	Produto(String nomeInicial, double precoInicial) {
 		nome = nomeInicial;
 		preco = precoInicial;
-		desconto = descontoInicial;
 	}
 	
 	// Métodos
