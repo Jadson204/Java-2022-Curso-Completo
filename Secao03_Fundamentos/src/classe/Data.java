@@ -5,6 +5,7 @@ public class Data {
 	int dia;
 	int mes;
 	int ano;
+	final String formato = "%d/%d/%d";
 	
 	// Construtores
 	Data() {
@@ -22,6 +23,7 @@ public class Data {
 	
 	// Métodos
 	String dataFormatada() {
-		return String.format("%d/%d/%d", dia, mes, ano);
+//		final String formato = "%d/%d/%d";
+		return String.format(formato, dia, mes, ano);
 	}
 }
