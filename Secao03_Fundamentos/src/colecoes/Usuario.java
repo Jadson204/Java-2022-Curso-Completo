@@ -19,6 +19,11 @@ public class Usuario {
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		return result;
 	}
+	
+//	@Override
+//	public int hashCode() {
+//		return this.nome.length();
+//	}
 
 	@Override
 	public boolean equals(Object obj) {
